@@ -61,3 +61,13 @@ button {
   opacity: 30%;
 }
 
+/*Added for slide down transition assignment*/
+
+.popup-modal {
+  transition: transform .5s ease-in-out, opacity .5s ease;
+  transform: translate(-50%, -100%);
+}
+
+.popup-modal.show {
+  transform: translate(-50%, -50%);
+}
